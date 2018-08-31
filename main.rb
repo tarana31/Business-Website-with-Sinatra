@@ -11,6 +11,10 @@ get '/about' do
 end
 
 
+get '/product' do
+    erb :product, layout: :layout
+end 
+
 get '/contact-us' do
     erb :contact, layout: :layout
 end 

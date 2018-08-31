@@ -10,8 +10,7 @@ body {
     margin-left: 300px;
     height: 150px;
     width:600px;
-    display: block ;
-   
+    display: block ;  
 }
 
 nav {
@@ -19,9 +18,9 @@ nav {
     width: auto;;
     text-align: center;
     margin-left: 100px;
-    margin-right: 100px;
-       
+    margin-right: 100px;       
 }
+
 nav li {
     display: inline-block;
     padding: 6px;
@@ -42,10 +41,14 @@ nav li a:hover{
     font-size: 24px;
 }
 
-.footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
+.footer { 
+
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
  }
 /* home page */
 
@@ -70,6 +73,10 @@ nav li a:hover{
     width: 650px;
 }
 
+#carousel-control-prev-icon {
+    margin-left :300px;
+}
+
 .carousel-inner img {
     height: 400px;
     width: 600px;
@@ -78,9 +85,9 @@ nav li a:hover{
 .carousel-inner {
     position: relative;
     overflow: hidden;
-    width : 500px;
-    border : 4px solid white;
-    margin-left: 285px;
+    width: 500px;
+    border: 4px solid white;
+    margin-left: 69px;
 }
 
 #content {
@@ -96,6 +103,28 @@ nav li a:hover{
     color: white;
 }
 
+#modal {
+    display: none;
+    position: fixed;
+    width: 431px;
+    height: 200px;
+    top: 30%;
+    left: 34%;
+    box-shadow: 4px 4px rgb(248, 247, 247);
+    background:grey;
+}
+#modal p {
+    padding: 10px;
+    width: 80%;
+    height: 20%;
+    font-size: 25px;
+    text-align: center;
+}
+
+#modal button {
+    float: right;
+}
+
 /* contact page */
 
 .container2 {
@@ -104,7 +133,11 @@ nav li a:hover{
     
 }
 #data {
-    margin :20px;
+    margin-left :100px;
+}
+#contactus  {
+    padding: 10px;
+    color:white;
 }
 label {
     color: white;
@@ -113,18 +146,17 @@ label {
 }
 
 #inquiry {
-    height: 300px;
-    width: 300px; 
+    height: 200px;
+    width: 200px; 
 }
 
 #submit {
     margin-left: 100px;
 }
 
-.container2 p {
+#data1 p {
     margin: 20px;
     margin-left: 110px;
-    height: 190px;
     width: 830px;
     text-align: center;
     color: white
@@ -140,7 +172,7 @@ img {
     margin: 20px;
     margin-left: 110px;
     height: 190px;
-    width: 830px;
+    /* width: 830px; */
     text-align: center;
 }
 .boxarea p {
@@ -148,4 +180,16 @@ img {
     line-height: 20px;
     font-size: 15px;
     color: white;
+}
+
+/* product page */
+
+.gallery_container {
+    background-color: green;
+    margin: 100px;
+    
+}
+.gallery img {
+    height: 200px;
+    width: 200px;
 }

@@ -1,14 +1,15 @@
 <div class = "container2">
 <div id = "data">
 
-# <% if request.post? %>
-#     <div id = "confirm=post">
-#     <h4>Thanks, <%= @name %>! Thank you for your time. Check your email for a response</h4>
+<% if request.post? %> 
+<div id="confirm=post">
+    <h4>Thanks, <%= @fname %>! Thank you for your time. Confirmation email has been sent to you..</h4>
 
-# <% else %> 
+<% else %>   
+    
     <form method = "POST" action = "/contact-us">
     
-        <p><span id = "contactus"> Contact Us</span> </p>
+        <div id = "contactus"> Contact Us</div>
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name">
         <br>
@@ -28,13 +29,13 @@
         <br><br>
         <input type="submit" value="  Submit  " id ="submit">
     </form>
-    # <% end %>
+<% end %>
 </div>
-<p> For your convenience, please use the form on the right to contact 
-    us with any query you may have. Please ensure that you have checked our
-    FAQ section first as you may find the answers to your queries there. 
-    If you are enquiring about an order, please provide us with your order number.
-</p>
-<p>Please allow up to 24 business hours for a reply.</p>
-<p>Help keep our overheads low by using emails whenever possible. Low overheads translate into lower prices. That benefits everyone.</p>
+    <div id = "data1">
+        <p> For your convenience, please use the form on the right to contact 
+            us with any query you may have. Please ensure that you have checked our
+            FAQ section first as you may find the answers to your queries there. 
+            If you are enquiring about an order, please provide us with your order number.</p>
+        <p>Please allow up to 24 business hours for a reply.Help keep our overheads low by using emails whenever possible. Low overheads translate into lower prices. That benefits everyone.</p>
+    </div>
 </div>
